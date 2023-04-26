@@ -14,9 +14,9 @@ const app_routes: Routes = [
   //Totes les altres rutes que no existeixin a les anteriors
 ];
 
-//decorador para imoportaciones y exportaciones
+//decorador para imoportaciones y exportaciones, hemos añadido useHash: true para la almohadilla del enlace
 @NgModule({
-  imports: [RouterModule.forRoot(app_routes)],
+  imports: [RouterModule.forRoot(app_routes, {useHash: true})],
   exports: [RouterModule],
 })
 
