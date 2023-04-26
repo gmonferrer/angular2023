@@ -1,7 +1,9 @@
-//importaci�n librer�a de m�dulos
+//librerias de módulos
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-//importaci�n de componentes
+import { AppRoutingModule } from './app-routing.module';
+
+//Componentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -10,7 +12,9 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { TerminosComponent } from './pages/terminos/terminos.component';
 import { ItemComponent } from './pages/item/item.component';
 
+//Decorador de módulos
 @NgModule({
+  //Componentes
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -21,7 +25,8 @@ import { ItemComponent } from './pages/item/item.component';
     ItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
