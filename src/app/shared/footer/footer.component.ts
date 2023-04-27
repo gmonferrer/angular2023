@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InfoPaginaService } from 'src/app/services/info-pagina.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   year: number = new Date().getFullYear();
   // para coger el año del ordenador 
+  constructor( public _servicio:InfoPaginaService) {}
   
 }
+

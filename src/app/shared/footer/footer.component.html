@@ -16,23 +16,32 @@
         </li>
       </ul>
       <p class="rk-footer__text rk-footer__copy">
-        <span class="ae-u-bolder">2015-{{year}} WebApp Angular Etif </span>Creative Commons
+        <span class="ae-u-bolder">2015-{{year}} {{_servicio.info.titulo}} </span>Creative Commons
+        <!-- el year entre llaves es una interpolación  -->
       </p>
     </div>
     <div class="ae-grid__item item-lg-4 au-xs-ta-center">
-      <a href="https://twitter.com/marcesteveg" target="_blank" class="rk-social-btn">
+      <a [href]="_servicio.info.twitter" target="_blank" class="rk-social-btn">
+        <!-- en vez de la dirección de twitter  -->
+        
         <svg>
           <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
         </svg>
         </a>
     </div>
     <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-      <p class="rk-footer__text rk-footer__contact">
+      <!-- <p class="rk-footer__text rk-footer__contact">
         <span class="ae-u-bold">Email: </span
         ><span class="ae-u-bolder">
           <a href="#0" class="rk-dark-color">marc@etif.es </a></span
-        >
-      </p>
+        > -->
+        <p class="rk-footer__text rk-footer__contact ">
+          <span class="ae-u-bold">Email: </span>
+          <span class="ae-u-bolder">
+          <a href="#0" class="rk-dark-color">{{_servicio.info.email}}</a>
+          </span>
+          </p>
+      
       <p class="rk-footer__text rk-footer__by">
         Desarrollador por
         <a href="https://pr0j3ct.com" class="ae-u-bolder">PR0J3CT.</a>
