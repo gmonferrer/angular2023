@@ -26,12 +26,12 @@ export class InfoPaginaService {
   // Leer el archivo JSON externo en la Real Time DataBase de Firebase de Google
   private cargarEquipo() {
     this.http
-      .get('https://etif-curso-webapp-angular-2023-default-rtdb.europe-west1.firebasedatabase.app/equip.json')
+      .get(
+        'https://web-2023-curso-etif-default-rtdb.europe-west1.firebasedatabase.app/equipo.json'
+      )
       .subscribe((resp: InfoPagina) => {
         this.equipo = resp; // provar resp. I veurem les propietats JSON
         console.log(resp);
       });
   }
-  
-  
 }
